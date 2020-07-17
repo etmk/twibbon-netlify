@@ -1,0 +1,48 @@
+html {
+  position: relative;
+  padding-bottom: 75px;
+  padding-top: 25px;
+  min-height: 100%;
+}
+
+.custom-file,
+#inputGambar,
+.upload-btn {
+  cursor: pointer;
+}
+
+canvas {
+  width: 360px;
+  height: 1px;
+}
+
+.slider {
+  display: none;
+}
+
+.download-btn {
+  display: none;
+  margin-bottom: 1rem;
+}
+
+.spacing {
+  margin-top: 100;
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 50px;
+  line-height: 50px;
+  background-color: #f5f5f5;
+}
+
+.footer span {
+  font-size: 12px;
+  padding-bottom: 2px;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+}
