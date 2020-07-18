@@ -5,8 +5,6 @@ const serverless = require('serverless-http');
 const app = express();
 const bodyParser = require('body-parser');
 const router = express.Router();
-const hbs = require("hbs");
-const http = require("http");
 
 app.use(express.static("public"));
 
@@ -18,9 +16,6 @@ app.get("/assets", (request, response) => {
   response.sendFile(__dirname + "/views/assets/");
 });
 
-//app.set("views", path.join(__dirname, "/views"));
-//app.set("view engine", "hbs");
-//app.use("/assets", express.static("/views/assets"));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 
