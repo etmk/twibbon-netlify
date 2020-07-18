@@ -16,6 +16,10 @@ app.get("/assets", (request, response) => {
   response.sendFile(__dirname + "/views/assets/");
 });
 
+app.get("*", (request, response) => {
+  response.sendFile(__dirname + "/views/404.html");
+});
+
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 
