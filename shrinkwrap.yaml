@@ -1,8 +1,6 @@
 dependencies:
   body-parser: 1.19.0
   express: 4.17.1
-  hbs: 4.1.1
-  http: 0.0.0
   netlify-lambda: 2.0.0
   nodemon: 2.0.4
   serverless-http: 2.5.0
@@ -2397,10 +2395,6 @@ packages:
       node: '>=0.10.0'
     resolution:
       integrity: sha1-gQaNKVqBQuwKxybG4iAMMPttXoA=
-  /foreachasync/3.0.0:
-    dev: false
-    resolution:
-      integrity: sha1-VQKYfchxS+M5IJfzLgBxyd7gfPY=
   /forwarded/0.1.2:
     dev: false
     engines:
@@ -2572,20 +2566,6 @@ packages:
     dev: false
     resolution:
       integrity: sha512-WjKPNJF79dtJAVniUlGGWHYGz2jWxT6VhN/4m1NdkbZ2nOsEF+cI1Edgql5zCRhs/VsQYRvrXctxktVXZUkixw==
-  /handlebars/4.7.6:
-    dependencies:
-      minimist: 1.2.5
-      neo-async: 2.6.2
-      source-map: 0.6.1
-      wordwrap: 1.0.0
-    dev: false
-    engines:
-      node: '>=0.4.7'
-    hasBin: true
-    optionalDependencies:
-      uglify-js: 3.10.0
-    resolution:
-      integrity: sha512-1f2BACcBfiwAfStCKZNrUCgqNZkGsAT7UM3kkYtXuLo0KnaVfjKOyf7PRzB6++aK9STyT1Pd2ZCPe3EGOXleXA==
   /has-flag/3.0.0:
     dev: false
     engines:
@@ -2662,16 +2642,6 @@ packages:
     dev: false
     resolution:
       integrity: sha512-taOaskGt4z4SOANNseOviYDvjEJinIkRgmp7LbKP2YTTmVxWBl87s/uzK9r+44BclBSp2X7K1hqeNfz9JbBeXA==
-  /hbs/4.1.1:
-    dependencies:
-      handlebars: 4.7.6
-      walk: 2.3.14
-    dev: false
-    engines:
-      node: '>= 0.8'
-      npm: 1.2.8000 || >= 1.4.16
-    resolution:
-      integrity: sha512-6QsbB4RwbpL4cb4DNyjEEPF+suwp+3yZqFVlhILEn92ScC0U4cDCR+FDX53jkfKJPhutcqhAvs+rOLZw5sQrDA==
   /hmac-drbg/1.0.1:
     dependencies:
       hash.js: 1.1.7
@@ -2708,10 +2678,6 @@ packages:
       node: '>= 0.6'
     resolution:
       integrity: sha512-ZTTX0MWrsQ2ZAhA1cejAwDLycFsd7I7nVtnkT3Ol0aqodaKW+0CTZDQ1uBv5whptCnc8e8HeRRJxRs0kmm/Qfw==
-  /http/0.0.0:
-    dev: false
-    resolution:
-      integrity: sha1-huYybSnF0Dnen6xYSkVon5KfT3I=
   /https-browserify/1.0.0:
     dev: false
     resolution:
@@ -4578,14 +4544,6 @@ packages:
     dev: false
     resolution:
       integrity: sha1-hnrHTjhkGHsdPUfZlqeOxciDB3c=
-  /uglify-js/3.10.0:
-    dev: false
-    engines:
-      node: '>=0.8.0'
-    hasBin: true
-    optional: true
-    resolution:
-      integrity: sha512-Esj5HG5WAyrLIdYU74Z3JdG2PxdIusvj6IWHMtlyESxc7kcDz7zYlYjpnSokn1UbpV0d/QX9fan7gkCNd/9BQA==
   /undefsafe/2.0.3:
     dependencies:
       debug: 2.6.9
@@ -4756,12 +4714,6 @@ packages:
     dev: false
     resolution:
       integrity: sha512-2ham8XPWTONajOR0ohOKOHXkm3+gaBmGut3SRuu75xLd/RRaY6vqgh8NBYYk7+RW3u5AtzPQZG8F10LHkl0lAQ==
-  /walk/2.3.14:
-    dependencies:
-      foreachasync: 3.0.0
-    dev: false
-    resolution:
-      integrity: sha512-5skcWAUmySj6hkBdH6B6+3ddMjVQYH5Qy9QGbPmN8kVmLteXk+yVXg+yfk1nbX30EYakahLrr8iPcCxJQSCBeg==
   /watchpack-chokidar2/2.0.0:
     dependencies:
       chokidar: 2.1.8
@@ -4841,10 +4793,6 @@ packages:
     dev: false
     resolution:
       integrity: sha512-JcKqAHLPxcdb9KM49dufGXn2x3ssnfjbcaQdLlfZsL9rH9wgDQjUtDxbo8NE0F6SFvydeu1VhZe7hZuHsB2/pw==
-  /wordwrap/1.0.0:
-    dev: false
-    resolution:
-      integrity: sha1-J1hIEIkUVqQXHI0CJkQa3pDLyus=
   /worker-farm/1.7.0:
     dependencies:
       errno: 0.1.7
@@ -4890,8 +4838,6 @@ shrinkwrapVersion: 3
 specifiers:
   body-parser: ^1.19.0
   express: ^4.17.1
-  hbs: ^4.1.1
-  http: ^0.0.0
   netlify-lambda: ^2.0.0
   nodemon: ^2.0.4
   serverless-http: ^2.5.0

@@ -1,11 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="shortcut icon" href="https://eenthlh.xyz/favicon.ico" type="image/x-icon">
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <link
+      rel="shortcut icon"
+      href="https://eenthlh.xyz/favicon.ico"
+      type="image/x-icon"
+    />
     <title>Online Twibbon</title>
-    
+
     <!-- OpenGraph Meta tags -->
     <meta property="og:type" content="website" />
     <meta property="og:title" content="Online Twibbon" />
@@ -16,27 +23,48 @@
     <meta property="og:description" content="Online Twibbon" />
     <meta property="og:footer" content="•" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    
+
     <!-- StyleSheet -->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://bootswatch.com/4/lux/bootstrap.min.css">
-    <link rel="stylesheet" href="assets/css/style.css">
-    
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://bootswatch.com/4/lux/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="assets/css/style.css" />
   </head>
   <body>
     <div class="container">
       <div class="alert alert-dismissible alert-dark">
-        <button type="button" class="close" data-dismiss="alert">&times;</button>
-         Beta Version! if you found a bug, please report to <a href="mailto: fauzan@eenthlh.xyz" class="alert-link">fauzan@eenthlh.xyz</a>
+        <button type="button" class="close" data-dismiss="alert">
+          &times;
+        </button>
+        Beta Version! if you found a bug, please report to
+        <a href="mailto: fauzan@eenthlh.xyz" class="alert-link"
+          >fauzan@eenthlh.xyz</a
+        >
       </div>
-      <div style="margin-top: 15px;" class="col-12 d-flex justify-content-center">
-        <img style="height: 150px;" src="assets/img/logo-sample.png">
+      <div
+        style="margin-top: 15px;"
+        class="col-12 d-flex justify-content-center"
+      >
+        <img style="height: 150px;" src="assets/img/logo-sample.png" />
       </div>
       <div style="margin-top: 15px;">
         <h2 class="text-center">Twibbon</h2>
-        <h6 class="text-center">Agar hasil maksimal, gunakan foto berskala 1:1.</h6>
+        <h6 class="text-center">
+          Agar hasil maksimal, gunakan foto berskala 1:1.
+        </h6>
       </div>
       <hr />
       <div class="row d-flex justify-content-center">
@@ -44,54 +72,122 @@
           <div class="input-group">
             <div class="col-12 d-flex justify-content-center">
               <div class="custom-file">
-                <input type="file" class="custom-file-input" id="inputGambar" accept="image/*" />
+                <input
+                  type="file"
+                  class="custom-file-input"
+                  id="inputGambar"
+                  accept="image/*"
+                />
                 <label class="custom-file-label">Pilih Foto</label>
               </div>
             </div>
             <div class="col-12 d-flex justify-content-center">
               <div class="input-group-prepend">
-                <span style="margin-top: 10px;" class="input-group-text btn-outline-dark upload-btn" onclick="generate();">Buat Twibbon</span>
+                <span
+                  style="margin-top: 10px;"
+                  class="input-group-text btn-outline-dark upload-btn"
+                  onclick="generate();"
+                  >Buat Twibbon</span
+                >
               </div>
             </div>
           </div>
         </div>
-        <div style="margin-bottom: 10px;" class="col-12 d-flex justify-content-center">
-          <canvas class="border border-dark" id="generated" width="1080" height="1080"></canvas>
+        <div
+          style="margin-bottom: 10px;"
+          class="col-12 d-flex justify-content-center"
+        >
+          <canvas
+            class="border border-dark"
+            id="generated"
+            width="1080"
+            height="1080"
+          ></canvas>
         </div>
         <div class="col-12 col-lg-4 text-center slider">
           <label for="posX">Posisi X</label>
-          <input type="range" class="custom-range" step="5" min="0" max="50" id="posX" value="0"
-            onchange="generate();" />
+          <input
+            type="range"
+            class="custom-range"
+            step="5"
+            min="0"
+            max="50"
+            id="posX"
+            value="0"
+            onchange="generate();"
+          />
         </div>
         <div class="col-12 col-lg-4 text-center slider">
           <label for="posY">Posisi Y</label>
-          <input type="range" class="custom-range" step="5" min="0" max="50" id="posY" value="0"
-            onchange="generate();" />
+          <input
+            type="range"
+            class="custom-range"
+            step="5"
+            min="0"
+            max="50"
+            id="posY"
+            value="0"
+            onchange="generate();"
+          />
         </div>
         <div class="col-12 col-lg-4 text-center slider">
           <label for="ukuran">Ukuran</label>
-          <input type="range" class="custom-range" step="0.1" min="0.1" max="3.0" id="ukuran" value="1.0"
-            onchange="generate();" />
+          <input
+            type="range"
+            class="custom-range"
+            step="0.1"
+            min="0.1"
+            max="3.0"
+            id="ukuran"
+            value="1.0"
+            onchange="generate();"
+          />
         </div>
-        <div style="margin-top: 10px;" class="col-12 d-flex justify-content-center">
-          <button onclick="downloadImage();" type="button" class="btn download-btn btn-outline-dark"><i
-            class="fas fa-arrow-circle-down"></i> Download</button>
+        <div
+          style="margin-top: 10px;"
+          class="col-12 d-flex justify-content-center"
+        >
+          <button
+            onclick="downloadImage();"
+            type="button"
+            class="btn download-btn btn-outline-dark"
+          >
+            <i class="fas fa-arrow-circle-down"></i> Download
+          </button>
         </div>
       </div>
     </div>
     <footer>
       <div class="footer text-center">
         <span>
-         Made with ♥️ by <a href="https://github.com/Fauzannnnh" target="_blank">Fauzannnnh</a> | Forked <a href="https://github.com/shidoitsuka" target="_blank">Shidoitsuka</a> Repository
+          Made with ♥️ by
+          <a href="https://github.com/Fauzannnnh" target="_blank">Fauzannnnh</a>
+          | Forked
+          <a href="https://github.com/shidoitsuka" target="_blank"
+            >Shidoitsuka</a
+          >
+          Repository
         </span>
       </div>
-     </footer>
-    
+    </footer>
+
     <!-- JavaScript -->
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.16.0/js/mdb.min.js"></script>
+    <script
+      type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/js/bootstrap.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.16.0/js/mdb.min.js"
+    ></script>
     <script type="text/javascript" src="assets/js/script.js"></script>
   </body>
 </html>
